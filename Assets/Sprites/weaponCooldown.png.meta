@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 9482ca27d5ef6984db428812ef7f5d67
+timeCreated: 1438951746
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: weaponCooldown_0
+    21300002: weaponCooldown_1
+    21300004: weaponCooldown_2
+    21300006: weaponCooldown_3
+    21300008: weaponCooldown_4
+    21300010: weaponCooldown_5
+    21300012: weaponCooldown_6
+    21300014: weaponCooldown_7
+    21300016: weaponCooldown_8
+    21300018: weaponCooldown_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: weaponCooldown_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 451
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: weaponCooldown_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
