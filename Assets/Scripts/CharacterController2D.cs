@@ -263,7 +263,6 @@ public class CharacterController2D : MonoBehaviour
 		if (deltaMovement.y != 0f)
 			moveVertically (ref deltaMovement);
 
-		print (deltaMovement);
 
 		// move then update our state
 		transform.Translate( deltaMovement, Space.World );
@@ -516,7 +515,6 @@ public class CharacterController2D : MonoBehaviour
 				// than the width + fudge bail out because we have a direct impact
 				if( rayDistance < _skinWidth + kSkinWidthFloatFudgeFactor )
 					break;
-				//print (collisionState.movingDownSlope + " " + isGrounded);
 			}
 		}
 	}
