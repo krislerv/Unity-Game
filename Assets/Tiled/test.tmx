@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" nextobjectid="35">
+ <tileset firstgid="1" name="rwall" tilewidth="16" tileheight="16" tilecount="1">
+  <image source="../Sprites/rwall.png" width="16" height="16"/>
+ </tileset>
+ <tileset firstgid="2" name="wall" tilewidth="16" tileheight="16" tilecount="1">
+  <image source="../Sprites/wall.png" width="16" height="16"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKQyJhdQ2zxc5o+aN2reYDWPlLRPjnn41OOTJydv0tM8bGbiU0eMeaSCoWIeNTEAP0sAaw==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <properties>
+   <property name="unity:layer" value="Wall"/>
+  </properties>
+  <object id="6" x="0" y="0" width="320" height="16"/>
+  <object id="9" x="240" y="16" width="80" height="16"/>
+  <object id="10" x="280.667" y="300.667" width="8" height="336" rotation="315"/>
+  <object id="13" x="0" y="16" width="16" height="304"/>
+  <object id="14" x="16" y="304" width="288" height="16"/>
+  <object id="15" x="272" y="240" width="16" height="16"/>
+  <object id="16" x="577.333" y="492.667" width="48" height="80" rotation="90"/>
+  <object id="18" x="96" y="208" width="32" height="32"/>
+  <object id="19" x="112" y="240" width="16" height="16"/>
+  <object id="20" x="176" y="176" width="16" height="64"/>
+  <object id="21" x="192" y="192" width="16" height="16"/>
+  <object id="34" x="144" y="170.667" width="48" height="80"/>
+ </objectgroup>
+</map>

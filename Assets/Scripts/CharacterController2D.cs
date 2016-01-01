@@ -263,6 +263,8 @@ public class CharacterController2D : MonoBehaviour
 		if (deltaMovement.y != 0f)
 			moveVertically (ref deltaMovement);
 
+		// to prevent player warping bug
+		deltaMovement.z = 0;
 
 		// move then update our state
 		transform.Translate( deltaMovement, Space.World );
@@ -534,14 +536,25 @@ public class CharacterController2D : MonoBehaviour
 		// the ray distance is based on our slopeLimit
 		var slopeCheckRayDistance = _slopeLimitTangent * ( _raycastOrigins.bottomRight.x - centerOfCollider );
 
-		var slopeRay = new Vector2( centerOfCollider, _raycastOrigins.bottomLeft.y );
+		//var slopeRay = new Vector2( centerOfCollider, _raycastOrigins.bottomLeft.y );
+		Vector2 slopeRay;
+		// if going right
+		if (deltaMovement.x > 0)
+		{
+			slopeRay = new Vector2( _raycastOrigins.bottomLeft.x, _raycastOrigins.bottomLeft.y );
+		}
+		else
+		{
+			slopeRay = new Vector2( _raycastOrigins.bottomRight.x, _raycastOrigins.bottomLeft.y );
+		}
+			
 		DrawRay( slopeRay, rayDirection * slopeCheckRayDistance, Color.yellow );
 		_raycastHit = Physics2D.Raycast( slopeRay, rayDirection, slopeCheckRayDistance, platformMask );
 		if( _raycastHit )
 		{
 			// bail out if we have no slope
 			var angle = Vector2.Angle( _raycastHit.normal, Vector2.up );
-			if( angle == 0 )
+			if (angle == 0) 
 				return;
 
 			// we are moving down the slope if our normal and movement direction are in the same x direction
@@ -551,7 +564,8 @@ public class CharacterController2D : MonoBehaviour
 				// going down we want to speed up in most cases so the slopeSpeedMultiplier curve should be > 1 for negative angles
 				var slopeModifier = slopeSpeedMultiplier.Evaluate( -angle );
 				// we add the extra downward movement here to ensure we "stick" to the surface below
-				deltaMovement.y += _raycastHit.point.y - slopeRay.y - skinWidth;
+				// TODO perfect the extra downward movement, downward movement loses contact with slope when fps is low
+				deltaMovement.y += _raycastHit.point.y - 0.3f - slopeRay.y - skinWidth;
 				deltaMovement.x *= slopeModifier;
 				collisionState.movingDownSlope = true;
 				collisionState.slopeAngle = angle;

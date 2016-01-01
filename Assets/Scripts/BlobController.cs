@@ -19,7 +19,6 @@ public class BlobController : Enemy {
 	}
 
 	void onTriggerEnterEvent(Collider2D coll) {
-		print (coll.gameObject.name);
 		if (coll.name != "player") {
 			damage (coll.GetComponent<Weapon> ().damage);
 			knockback = coll.GetComponent<Weapon> ().knockback;
